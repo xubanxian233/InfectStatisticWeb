@@ -13,6 +13,26 @@
 			<span>更新至2020.3.13</span>
 		</div>
 		<div id="data">
+			<div class="c1">
+				<span class="s1">现有确诊</span>
+				<span class="s2">300</span>
+				<span class="s3">昨日-56</span>
+			</div>
+			<div class="c1">
+				<span class="s1">累计确诊</span>
+				<span class="s2">500</span>
+				<span class="s3">昨日-15</span>
+			</div>
+			<div class="c1">
+				<span class="s1">累计治愈</span>
+				<span class="s2">400</span>
+				<span class="s3">昨日-51</span>
+			</div>
+			<div class="c1">
+				<span class="s1">累计死亡</span>
+				<span class="s2">30</span>
+				<span class="s3">昨日-2</span>
+			</div>
 		</div>
 		<div id="line" style="width:98%; height: 400px;">
 		
