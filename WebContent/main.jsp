@@ -15,23 +15,23 @@
 		<div id="data">
 			<div class="c1">
 				<span class="s1">现有确诊</span>
-				<span class="s2">300</span>
-				<span class="s3">昨日-56</span>
+				<span class="s2" id="s21"></span>
+				<span class="s3" id="s31"></span>
 			</div>
 			<div class="c1">
 				<span class="s1">累计确诊</span>
-				<span class="s2">500</span>
-				<span class="s3">昨日-15</span>
+				<span class="s2" id="s22"></span>
+				<span class="s3" id="s32"></span>
 			</div>
 			<div class="c1">
 				<span class="s1">累计治愈</span>
-				<span class="s2">400</span>
-				<span class="s3">昨日-51</span>
+				<span class="s2" id="s23"></span>
+				<span class="s3" id="s33"></span>
 			</div>
 			<div class="c1">
 				<span class="s1">累计死亡</span>
-				<span class="s2">30</span>
-				<span class="s3">昨日-2</span>
+				<span class="s2" id="s24"></span>
+				<span class="s3" id="s34"></span>
 			</div>
 		</div>
 		<div id="line" style="width:98%; height: 400px;">
@@ -53,5 +53,6 @@
 		</div>
 	</div>
 	<script type="text/javascript" src="js/main.js"></script>
+	<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.js"></script>
 </body>
 </html>
