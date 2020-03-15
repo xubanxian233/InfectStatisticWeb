@@ -136,14 +136,14 @@ function getData(){
 						var person = {
 							    cityName:data.newslist[i].provinceName,
 							    shortName:data.newslist[i].provinceShortName,
-							    currentConfirmedCount: data.newslist[i].currentConfirmedCount,
+							    currentConfirmedCount: data.newslist[i].currentConfirmedCount+'',
 							    confirmedCount: data.newslist[i].confirmedCount+'',
-							    suspectedCount: data.newslist[i].suspectedCount,
-							    curedCount: data.newslist[i].curedCount,
-							    deadCount: data.newslist[i].deadCount,
+							    suspectedCount: data.newslist[i].suspectedCount+'',
+							    curedCount: data.newslist[i].curedCount+'',
+							    deadCount: data.newslist[i].deadCount+'',
 							};
 					}
-					document.getElementById('s21').innerHTML=data.newslist[0].currentConfirmedCount;
+					//document.getElementById('s21').innerHTML=data.newslist[0].currentConfirmedCount;
 					document.getElementById('s22').innerHTML=data.newslist[0].confirmedCount;
 					document.getElementById('s23').innerHTML=data.newslist[0].curedCount;
 					document.getElementById('s24').innerHTML=data.newslist[0].deadCount;

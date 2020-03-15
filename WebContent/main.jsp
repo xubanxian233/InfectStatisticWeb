@@ -1,5 +1,9 @@
 <%@ page language="java" contentType="text/html; charset=utf-8"
     pageEncoding="utf-8"%>
+<%@page import="web.dao.dataDAO"%>
+<%@page import="web.dao.dataDAOImpl"%>
+<%@page import="web.pojo.Province"%>
+<%@page import="java.util.*" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,6 +11,10 @@
 <link href="css/main.css" rel="stylesheet" type="text/css">
 </head>
 <body>
+	<%
+	dataDAO dao=new dataDAOImpl();
+	Province pro=dao.get("hubei");			
+				%>
 	<div id="main">
 		<div id="header">
 			<h1>省份</h1>
@@ -15,7 +23,7 @@
 		<div id="data">
 			<div class="c1">
 				<span class="s1">现有确诊</span>
-				<span class="s2" id="s21"></span>
+				<span class="s2" id="s21"><%=pro.getcurrentConfirmedCount() %></span>
 				<span class="s3" id="s31"></span>
 			</div>
 			<div class="c1">
