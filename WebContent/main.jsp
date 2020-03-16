@@ -8,7 +8,7 @@
 <html>
 <head>
 <%
-	String pro="福建";//(String)request.getAttribute("pro");		
+	String pro=(String)request.getAttribute("pro");		
 				%>
 <title><%=pro %>具体情况</title>
 <link href="css/main.css" rel="stylesheet" type="text/css">
