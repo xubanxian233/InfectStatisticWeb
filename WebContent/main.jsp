@@ -7,23 +7,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Insert title here</title>
+<%
+	String pro="福建";//(String)request.getAttribute("pro");		
+				%>
+<title><%=pro %>具体情况</title>
 <link href="css/main.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-	<%
-	dataDAO dao=new dataDAOImpl();
-	Province pro=dao.get("hubei");			
-				%>
+	
 	<div id="main">
 		<div id="header">
-			<h1>省份</h1>
-			<span>更新至2020.3.13</span>
+			<h1 id='pro'><%=pro %></h1>
+			<span id="time"></span>
 		</div>
 		<div id="data">
 			<div class="c1">
 				<span class="s1">现有确诊</span>
-				<span class="s2" id="s21"><%=pro.getcurrentConfirmedCount() %></span>
+				<span class="s2" id="s21"></span>
 				<span class="s3" id="s31"></span>
 			</div>
 			<div class="c1">
